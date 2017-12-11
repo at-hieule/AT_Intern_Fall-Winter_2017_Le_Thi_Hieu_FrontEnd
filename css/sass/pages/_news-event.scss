@@ -1,0 +1,16 @@
+.news-event {
+  background: url(../images/event-bg.jpg) no-repeat;
+  background-size: cover;
+  height: 620px;
+}
+.title-color {
+  color: #fff;
+}
+.news-item{
+  width: 33%;
+  float: left;
+  // margin-left: 15px;
+  p {
+    padding: 10px 0px;
+  }
+}
