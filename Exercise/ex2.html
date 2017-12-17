@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exercise 2 - Hieu Le</title>
+</head>
+<body>
+  <button id="btn">Submit</button>
+  <script>
+    let submit = document.getElementById('btn');
+    submit.addEventListener('click',func1());
+    function func1 () {
+      alert('Hello everyone') ;
+    }
+    submit.addEventListener('click',func1());
+    submit.removeEventListener('click', func1);
+  </script>
+</body>
+</html>
