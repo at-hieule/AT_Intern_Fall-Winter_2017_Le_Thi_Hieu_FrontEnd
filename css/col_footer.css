@@ -1,0 +1,11 @@
+.container .col-footer {
+  width: 25%;
+  float: left;
+  line-height: 1.8em;
+  padding: 0 45px 0 0;
+  font-size: 14px; }
+  .container .col-footer a {
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding: 12px 5px; }

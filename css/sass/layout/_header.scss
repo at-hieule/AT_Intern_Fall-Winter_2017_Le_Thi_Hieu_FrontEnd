@@ -1,27 +1,66 @@
 .header {
-  height: 80px;
-  padding: 10px 0px;
+  text-align: center;
+  .branding {
+    height: 223px;
+    background-image: url("../images/header-left.png"), 
+    url("../images/header-right.png");
+    background-repeat: no-repeat,no-repeat;
+    background-position: left top,right top;
+    img {
+      vertical-align: middle;
+    }
+    ::before{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    }
+  }
 }
+.nabar {
+  padding-top: 12px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-top: 3px double $border-color;
+  border-bottom: 3px double $border-color;
+  
+}
+
 nav {
-  margin-top: 35px;
-  float: right;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
   ul {
     display: block;
+    line-height: 1.8em;
+    
   }
   li {
     display: inline-block;
     list-style: none;
-    :before {
-    content: "";
-    display: inline-block;
-    border: 5px solid #0b9444;
-    border-radius: 50%;
-    margin-right: 20px;
-    margin-left: 20px;
+    padding-bottom: 10px;
+    position: relative;
+    &::after {
+      content: '/';
+      top: 6px;
+      position: absolute;
+      right: -5px;
+      font-weight: 700;
+      font-size: 13px;
+      color: $border-color;
+    }
+    &:last-child::after {
+      content: '';
     }
   }
   a {
+    color: black;
     text-decoration: none;
-    color: #282828;
+    padding: 5px 25px;
+    display: block;
+    font-size: 14px;
+    font-family: $font-family;
   }
 }

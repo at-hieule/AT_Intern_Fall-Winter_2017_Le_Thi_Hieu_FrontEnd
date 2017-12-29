@@ -1,7 +1,42 @@
-.container {
-  max-width: 1270px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 15px;
+main {
+  .banner {
+    margin-top: 47px;
+    position: relative;
+    &::before {
+      content: "";
+      background-image: url('../images/banner-overlay-top-tile.png');
+      height: 96px;
+      width: 100%;
+      position: absolute;
+    }
+    &::after {
+      content: "";
+      background-image: url('../images/banner-overlay-bottom-tile.png');
+      height: 67px;
+      width: 100%;
+      bottom: 0;
+      position: absolute;
+      padding-bottom: 50px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .container {
+    font-family: $font-family;
+    width: 100%;
+    margin: 37px 0px 10px 0px;
+    text-align: center;
+    p {
+      width: 1120px;
+      height: 165px;
+      margin: auto;
+      padding: 38px 0px;
+      line-height: 30px;
+      font-size: 17px;
+      border-top: 1px solid $border-color;
+      border-bottom: 1px solid $border-color;
+    } 
+  }
+  
 }
-
